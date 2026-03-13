@@ -3,83 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My HTML Assignment - Home</title>
+  <title>My Profile</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
-    <a href="index.html" title="Go to Home Page">Home</a>
-    <a href="about.html" title="Learn about me">About</a>
-    <a href="table.html" title="View data tables">Tables</a>
-    <a href="form.html" title="Fill out a form">Form</a>
+    <div class="nav-logo">Profile</div>
+    <div class="nav-links">
+      <a href="index.html" title="Home">Home</a>
+      <a href="about.html" title="About Monia">About</a>
+      <a href="table.html" title="Academics">Academics</a>
+      <a href="form.html" title="Contact">Contact</a>
+    </div>
   </nav>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Welcome to My HTML Assignment</h1>
-    <p>This website demonstrates core HTML concepts including tables, forms, lists, images, and multi-page navigation.</p>
+  <header class="hero">
+    <div class="hero-tag">Software Engineering Student </div>
+    <h1 class="hero-title">Monia Nijimbere.</span></h1>
+    <p class="hero-sub">Building things. Exploring the world. One step at a time.</p>
+
   </header>
 
-  <!-- MAIN CONTENT -->
   <main>
 
-    <!-- LISTS SECTION -->
-    <section>
-      <h2>How to Build a Web Page (Ordered List)</h2>
-      <ol>
-        <li>Plan the structure of your web page</li>
-        <li>Create an HTML file using a text editor</li>
-        <li>Add the DOCTYPE declaration and basic HTML structure</li>
-        <li>Write your content using appropriate HTML tags</li>
-        <li>Add images, links, and forms as needed</li>
-        <li>Test your page in a web browser</li>
-        <li>Fix any errors and validate your HTML</li>
+    <section class="card">
+      
+      <h2>My Goals</h2>
+      <ol class="styled-list">
+        <li><span class="step-num">01</span><span>Graduate as a confident software engineer</span></li>
+        <li><span class="step-num">02</span><span>Build products that solve real problems</span></li>
+        <li><span class="step-num">03</span><span>Travel to at least 20 countries before 30</span></li>
+        <li><span class="step-num">04</span><span>Launch something I am truly proud of</span></li>
+        <li><span class="step-num">05</span><span>Inspire young women to pursue technology</span></li>
       </ol>
     </section>
 
-    <section>
-      <h2>My Hobbies (Unordered List)</h2>
-      <ul>
-        <li>Web Development</li>
-        <li>Reading tech articles</li>
-        <li>Playing football</li>
-        <li>Watching documentaries</li>
-        <li>Learning new programming languages</li>
+    <section class="card">
+      
+      <h2>What I Love</h2>
+      <ul class="dot-list">
+        <li> Travelling and discovering new cultures</li>
+        <li>Photography and storytelling through images</li>
+        <li>Building web projects from scratch</li>
+        <li>Reading — tech, travel, and everything in between</li>
       </ul>
     </section>
 
-    <!-- IMAGES SECTION -->
-    <section>
-      <h2>Images</h2>
-
-      <!-- Image as a hyperlink -->
-      <a href="about.html" title="Click to visit the About page">
-        <img
-          src="https://picsum.photos/id/0/400/200"
-          alt="A scenic view representing our about page"
-          width="400"
-          height="200"
-        />
-      </a>
-      <p><em>Click the image above to go to the About page.</em></p>
-
-      <br/>
-
-      <img
-        src="https://picsum.photos/id/1/400/200"
-        alt="A laptop showing code representing web development"
-        width="400"
-        height="200"
-      />
-      <p><em>Web development is the foundation of the internet.</em></p>
-    </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 HTML Assignment. All rights reserved.</p>
+    <p>Monia Nijimbere &copy; 2025</p>
   </footer>
 
 </body>
