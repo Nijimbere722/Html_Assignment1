@@ -3,96 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Student Registration Form</title>
+  <title>Contact — Monia Nijimbere</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
-    <a href="index.html" title="Go to Home Page">Home</a>
-    <a href="about.html" title="Learn about me">About</a>
-    <a href="table.html" title="View data tables">Tables</a>
-    <a href="form.html" title="Fill out a form">Form</a>
+    <div class="nav-logo">Profile</div>
+    <div class="nav-links">
+      <a href="index.html" title="Go to Home Page">Home</a>
+      <a href="about.html" title="Learn about Monia">About</a>
+      <a href="form.html" title="Get in touch with Monia">Contact</a>
+    </div>
   </nav>
 
-  <header>
-    <h1>Student Registration Form</h1>
-    <p>Please fill in the details below to register as a student.</p>
+  <header class="page-header">
+    <h1>Contact</h1>
+    <p>Have a question or want to work together? Fill in the form below and I will get back to you.</p>
   </header>
 
   <main>
-    <section>
+
+    <section class="card">
+      <h2>Get In Touch</h2>
+      <p>Email: nijimberemonia04@gmail.com</p>
+      <p>Phone: +250 794136697</p>
+    </section>
+
+    <section class="card">
+      <h2>Send Me a Message</h2>
+
       <form action="#" method="post">
 
-        <!-- Text Input -->
-        <div>
-          <label for="fullname">Full Name:</label><br/>
-          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+        <div class="form-group">
+          <label for="fullname">Your Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Jean Pierre Nkusi" required />
         </div>
 
-        <br/>
-
-        <!-- Email Input -->
-        <div>
-          <label for="email">Email Address:</label><br/>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <div class="form-group">
+          <label for="email">Your Email Address</label>
+          <input type="email" id="email" name="email" placeholder="e.g. jeanpierre@email.com" required />
         </div>
 
-        <br/>
-
-        <!-- Phone Number -->
-        <div>
-          <label for="phone">Phone Number:</label><br/>
-          <input type="text" id="phone" name="phone" placeholder="Enter your phone number" />
+        <div class="form-group">
+          <label for="institution">Your School or Organisation <span class="optional">(optional)</span></label>
+          <input type="text" id="institution" name="institution" placeholder="e.g. University of Rwanda" />
         </div>
 
-        <br/>
-
-        <!-- Radio Buttons - Gender -->
-        <div>
-          <label>Gender:</label><br/>
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label>
-          &nbsp;
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Female</label>
-          &nbsp;
-          <input type="radio" id="other" name="gender" value="other" />
-          <label for="other">Other</label>
+        <div class="form-group">
+          <label>Why Are You Reaching Out?</label>
+          <div class="radio-group">
+            <div>
+              <input type="radio" id="collab" name="reason" value="collab" />
+              <label for="collab" class="radio-label">Collaboration on a project</label>
+            </div>
+            <div>
+              <input type="radio" id="study" name="reason" value="study" />
+              <label for="study" class="radio-label">Study group or academic help</label>
+            </div>
+            <div>
+              <input type="radio" id="opportunity" name="reason" value="opportunity" />
+              <label for="opportunity" class="radio-label">Internship or opportunity</label>
+            </div>
+            <div>
+              <input type="radio" id="hello" name="reason" value="hello" />
+              <label for="hello" class="radio-label">Just saying hello</label>
+            </div>
+          </div>
         </div>
 
-        <br/>
-
-        <!-- Checkboxes - Courses -->
-        <div>
-          <label>Select Courses You Are Interested In:</label><br/>
-          <input type="checkbox" id="webdev" name="courses" value="webdev" />
-          <label for="webdev">Web Development</label><br/>
-
-          <input type="checkbox" id="database" name="courses" value="database" />
-          <label for="database">Database Systems</label><br/>
-
-          <input type="checkbox" id="networking" name="courses" value="networking" />
-          <label for="networking">Computer Networking</label><br/>
-
-          <input type="checkbox" id="ai" name="courses" value="ai" />
-          <label for="ai">Artificial Intelligence</label>
+        <div class="form-group">
+          <label>Topics You Want to Discuss</label>
+          <div class="checkbox-group">
+            <div>
+              <input type="checkbox" id="webdev" name="topics" value="webdev" />
+              <label for="webdev" class="check-label">Web Development</label>
+            </div>
+            <div>
+              <input type="checkbox" id="python" name="topics" value="python" />
+              <label for="python" class="check-label">Python Programming</label>
+            </div>
+            <div>
+              <input type="checkbox" id="travel" name="topics" value="travel" />
+              <label for="travel" class="check-label">Travel and Experiences</label>
+            </div>
+            <div>
+              <input type="checkbox" id="career" name="topics" value="career" />
+              <label for="career" class="check-label">Career in Tech</label>
+            </div>
+          </div>
         </div>
 
-        <br/>
-
-        <!-- Submit Button -->
-        <div>
-          <input type="submit" value="Register Now" />
+        <div class="form-group">
+          <input type="submit" value="Send Message →" />
         </div>
 
       </form>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 HTML Assignment. All rights reserved.</p>
+    <p>Monia Nijimbere &copy; 2026</p>
   </footer>
 
 </body>
